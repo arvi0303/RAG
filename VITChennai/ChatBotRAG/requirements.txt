@@ -1,0 +1,24 @@
+# Deep Learning Frameworks
+transformers
+
+# Utility Libraries
+einops
+accelerate
+bitsandbytes
+pypdf
+python-dotenv
+ipython
+
+# LangChain and related dependencies
+langchain
+langchain-community
+sentence_transformers
+
+# Llama Index and related dependencies
+llama_index
+llama-index-llms-huggingface
+llama-index-embeddings-langchain
+
+# Vector Store
+chromadb
+llama-index-vector-stores-chroma

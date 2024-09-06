@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+
+}
+
+/* Container for the title */
+.title {
+    display: flex;
+    flex-direction: row; /* Stack the image and h1 vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    /* margin-bottom: 20px; Add some space below the title */
+    padding-top: 20px; /* Add some space above the title to ensure it's at the top */
+	gap:50px;
+	margin-top: 50px; /* Add some space between the image and the heading */
+	margin-bottom: 100px; /* Add some space between the image and the heading */
+}
+
+/* Additional styling for the title image and heading */
+.title img {
+    max-width: 30%; /* Ensure the image is responsive */
+    height: auto;
+}
+
+.titlecontent h1 {
+    font-size: 3em;
+    text-align: center; /* Ensure the text is centered */
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Arial', Times, serif, Menlo, source-code-pro, Monaco, monospace;
+	font-weight: 300;
+}
+
+.titlecontent h2 {
+    font-size: 2em;
+    text-align: center; /* Ensure the text is centered */
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Arial', Times, serif, Menlo, source-code-pro, Monaco, monospace;
+	font-weight: 100;
+}
+
+body {
+  /* font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica,
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	background-color: rgba(0, 0, 0);
+	height: 100%;
+	margin: 0;
+}
+
+.user span {
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: rgb(235, 235, 235);
+	border-radius: 10px; 
+	width: 85%;
+	padding: 10px 20px 10px 20px;
+	font-family: 'Times New Roman', Times, serif, Menlo, source-code-pro, Monaco, monospace;
+}
+
+.container {
+	display: flex;
+  	justify-content: space-evenly;
+	align-items: center;
+	gap:50px;
+	/* width: 100%;
+	height: 100%; */
+}
+
+.chat {
+	height: 500px;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+	align-items: center;
+} 
+
+::-webkit-input-placeholder { 
+	color: .711 
+}
+ 
+input { 
+	border: 0; 
+	padding: 15px; 
+	/* margin-left: auto; */
+	border-radius: 10px; 
+	width: 100%
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+    word-wrap: break-word; /* Break long words and wrap them to the next line */
+    white-space: normal; /* Ensure text wraps normally */
+	height:  400vh;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	/* border-radius: 10px; */
+}
+
+#bot {
+	margin-left: auto;
+}
+
+.bot {
+	font-family: 'Times New Roman', Times, serif, Menlo, source-code-pro, Monaco, monospace;
+}
+
+.avatar {
+	height: 25px;
+}
+
+.response {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	margin: 1%;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 980px) {
+  .container {
+		flex-direction: column; 
+		justify-content: flex-start;
+	}
+	.chat {
+		width: 75vw;
+	}
+}
+
+@media (min-width: 1024px) {
+    .title img {
+        max-width: 20%; /* Change max-width to 20% for screens wider than 1024px */
+    }
+}
