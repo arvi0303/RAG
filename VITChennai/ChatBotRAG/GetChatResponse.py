@@ -30,7 +30,7 @@ query_wrapper_prompt = SimpleInputPrompt("<|USER|>{query_str}<|ASSISTANT|>")
 load_dotenv()
 
 # Authenticate
-auth_token = os.getenv('HUGGINGFACEHUB_API_TOKEN')
+auth_token = os.getenv('https://github.com/arvi0303/RAG.git')
 login(token=auth_token)
 
 # Load the model and tokenizer
